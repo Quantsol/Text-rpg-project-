@@ -1,5 +1,7 @@
 
 
+Player_alive = True
+Victory = False
 
 def menu():
 
@@ -9,7 +11,6 @@ def menu():
 
     if Start_menu == "start":
         print("Game start")
-        return "doors"
     else:
         print("goodbye")
 
@@ -19,19 +20,28 @@ def start():
           "in front of you is a door with a sign that says : 'welcome to spectra! try and survive!"
           )
 
-    door_1 = input(str("would you like to open the door? (yes/no)"))
+    Start_input = input(str("would you like to open the door? (yes/no)")).strip()
 
-    if door_1 == "yes":
+    if Start_input == "yes":
         print("you open the door and this thing actually works ")
     else:
-        print("wtf just say yes or no")
+        print("just say yes or no")
 
 
-menu()
 
-if menu() == "doors":
-    start()
+def Door_1():
 
+    print("You walk through a door into another room , there are two buttons on the wall "
+          "one says 'Live' , and the other says 'die' , which do you pick? " )
+
+    answer = input(str("choose live or die")).strip()
+
+    if answer == "live":
+        print("Yay you live ")
+        Victory == True
+
+    else:
+        print(" You die ")
 
 
 

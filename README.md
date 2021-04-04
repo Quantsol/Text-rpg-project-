@@ -1,3 +1,10 @@
+update 4/4/2021
+ 
+ Still learning Github so mergining and pulling has become messy
+ 
+ I added the menu function , start function and the first "door" 
+
+
 update 4/3/2021: 
 
 Text based Rpg game.  
